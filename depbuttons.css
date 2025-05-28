@@ -1,0 +1,88 @@
+.ui-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.ui-button--sm {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.ui-button--md {
+  font-size: 1rem;
+  padding: 0.625rem 1.5rem;
+}
+
+.ui-button--lg {
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+}
+
+.ui-button--block {
+  display: block;
+  width: 100%;
+}
+
+.ui-button--rounded {
+  border-radius: 9999px;
+}
+
+.ui-button--primary {
+  background-color: #3b82f6;
+  color: #ffffff !important;
+  border: none;
+}
+
+.ui-button--primary:hover {
+  background-color: #2563eb;
+}
+
+.ui-button--secondary {
+  background-color: #f3f4f6;
+  color: #1f2937 !important;
+  border: none;
+}
+
+.ui-button--secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.ui-button--lightblue {
+  background-color: #e0f2fe;
+  color: #007bff !important;
+  border: none;
+}
+
+.ui-button--lightblue:hover {
+  background-color: #bae6fd;
+}
+
+.ui-button--outline {
+  background-color: transparent;
+  color: #3b82f6 !important;
+  border: 1px solid #3b82f6;
+}
+
+.ui-button--outline:hover {
+  background-color: #eff6ff;
+}
+
+.ui-button--link {
+  background-color: transparent;
+  color: #3b82f6 !important;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.ui-button--link:hover {
+  color: #2563eb !important;
+  background-color: transparent;
+  text-decoration: none;
+}
