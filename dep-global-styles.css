@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #f6f5f4;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -160,7 +160,7 @@ body {
     background-color: #fff;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    padding: 6rem 1rem;
+    padding-block: 6rem;
 }
 
 @media (min-width: 640px) {
@@ -178,25 +178,19 @@ body {
 }
 
 .partners-section__header {
-    max-width: 1280px;
-    margin: 0 auto;
     text-align: center;
     padding: 0 1rem;
     margin-bottom: 2.5rem;
 }
-
-.partners-section__title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #111827;
-    margin-bottom: 0.5rem;
+.partner-section_title{
+    margin-bottom: 5px;
 }
 
 .partners-section__subtitle {
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 1.78;
     color: #4b5563;
 }
-
 
 .partners-section__list {
     display: flex;
@@ -207,19 +201,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6rem;
+    height: 100px;
+}
+
+.partners-section__item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .partners-section__logo {
+    max-width: 120px;
     width: 100%;
-    max-width: 150px;
 }
 
 .partners-section__logo img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
 }
+
 
 
 
@@ -358,17 +362,6 @@ body {
     /* hover:shadow-xl */
 }
 
-.audit-option__title {
-    font-size: 1.125rem;
-    /* text-lg */
-    font-weight: 600;
-    /* font-semibold */
-    color: #111827;
-    /* text-gray-900 */
-    margin-bottom: 1rem;
-    /* mb-4 */
-    line-height: 1.2;
-}
 
 .audit-option__link {
     display: inline-flex;
@@ -377,6 +370,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     transition: color 0.2s;
+    margin-top: 5px;
 }
 
 .audit-option__link:hover {
@@ -437,26 +431,7 @@ body {
 .cases__header-desc,
 .audit-section__title {
     margin-top: 0.5rem;
-    /* mt-2 */
-    font-size: 1.875rem;
-    /* text-3xl */
-    font-weight: 700;
-    line-height: 3rem;
-    letter-spacing: -0.02em;
-    /* tracking-tight */
-    color: #111827;
-    /* text-gray-900 */
 }
-
-@media (min-width: 640px) {
-
-    .cases__header-desc,
-    .audit-section__title {
-        font-size: 2.25rem;
-        /* sm:text-4xl */
-    }
-}
-
 
 
 .cases__grid {
@@ -707,68 +682,67 @@ body {
         margin-right: calc(50% - 12rem);
     }
 }
-
-
-.partner {
-    padding-block: 4rem;
+.offer-section {
+  background-color: #fff;
+  padding-block: 4rem;
 }
 
-.partner__container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+.offer-section__wrapper {
+  background-color: #f6f5f4;
+  padding-block: 4rem;
 }
 
-
-@media (min-width: 1024px) {
-    .partner__container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-.partner__content {
-    max-width: 42rem;
-}
-
-.partner__title {
-    font-size: 1.875rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #111827;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 640px) {
-    .partner__title {
-        font-size: 2.25rem;
-    }
-}
-
-.partner__description {
-    font-size: 20px;
-    color: #4B5563;
-}
-
-.partner__actions {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-@media (min-width: 640px) {
-    .partner__actions {
-        flex-direction: row;
-        align-items: center;
-    }
+.offer-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 @media (min-width: 1024px) {
-    .partner__actions {
-        margin-left: 2.5rem;
-        margin-top: 0;
-    }
+  .offer-section__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.offer-section__info {
+  max-width: 42rem;
+}
+
+.offer-section__title {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .offer-section__title {
+    font-size: 2.25rem;
+  }
+}
+
+.offer-section__text {
+  font-size: 20px;
+  color: #4B5563;
+}
+
+.offer-section__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .offer-section__actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .offer-section__actions {
+    margin-left: 2.5rem;
+    margin-top: 0;
+  }
 }
 
 
@@ -807,12 +781,7 @@ body {
 }
 
 .clients__title {
-    font-size: 1.875rem;
-    /* text-3xl */
-    font-weight: 700;
-    /* font-bold */
     margin-bottom: 0.5rem;
-    /* mb-2 */
 }
 
 .clients__subtitle {
@@ -875,7 +844,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 6rem;
-    /* h-24 */
 }
 
 .clients__logo-wrapper {
@@ -893,7 +861,7 @@ body {
 
 .video-promo {
     padding-top: 6rem;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     background-color: #fff;
     text-align: center;
 }
@@ -905,11 +873,7 @@ body {
 }
 
 .video-promo__title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #111827 !important;
     margin-bottom: 0.5rem;
-    line-height: 1.2;
 }
 
 .video-promo__subtitle {
@@ -966,19 +930,6 @@ body {
     margin-bottom: 10px;
 }
 
-.benefits__title {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    color: #111827;
-    line-height: 1.2;
-}
-
-@media (min-width: 640px) {
-    .benefits__title {
-        font-size: 36px;
-    }
-}
 
 .benefits__description {
     margin-top: 24px;
@@ -1048,4 +999,26 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
+}
+
+.gradient-text {
+  background: linear-gradient(    90deg,    #722ed1 0%,    #d3adf7 50%,    #2f54eb 100%   );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease-in-out infinite;
+  -webkit-animation: gradientShift 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
