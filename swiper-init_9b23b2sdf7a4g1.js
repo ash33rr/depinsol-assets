@@ -1,7 +1,8 @@
-       const swiperPartners = new Swiper('.swiper-partners', {
+    const swiperPartners = new Swiper('.swiper-partners', {
             slidesPerView: 2,
             spaceBetween: 16,
             loop: true,
+            grabCursor: true,
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: false,
@@ -17,6 +18,7 @@
      slidesPerView: 2,
             spaceBetween: 16,
             loop: true,
+            grabCursor: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
