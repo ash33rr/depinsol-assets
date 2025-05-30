@@ -1,5 +1,5 @@
     const swiperPartners = new Swiper('.swiper-partners', {
-            slidesPerView: 'auto',
+       slidesPerView: 3,
             spaceBetween: 16,
             loop: true,
             autoplay: {
@@ -7,14 +7,14 @@
                 disableOnInteraction: false,
             },
             breakpoints: {
-                640: { slidesPerView: 1 },
+                640: { slidesPerView: 3 },
                 768: { slidesPerView: 4 },
                 1024: { slidesPerView: 6 },
             },
         });
 
         const swiperClients = new Swiper('.swiper-clients', {
-            slidesPerView: 'auto',
+            slidesPerView: 3,
             spaceBetween: 16,
             loop: true,
             autoplay: {
@@ -26,7 +26,7 @@
                 prevEl: '.clients__arrow--prev',
             },
             breakpoints: {
-                640: { slidesPerView: 2 },
+                640: { slidesPerView: 3 },
                 768: { slidesPerView: 4 },
                 1024: { slidesPerView: 6 },
             },
