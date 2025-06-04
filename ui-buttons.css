@@ -48,6 +48,31 @@
   border: none;
 }
 
+.ui-button--danger {
+  background-color: #ff4d4f;
+  color: #fff !important;
+  border: 1px solid #ff4d4f;
+}
+
+.ui-button--danger:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+.ui-button--danger:active {
+  background-color: #d9363e;
+  border-color: #d9363e;
+}
+
+.ui-button--danger:disabled,
+.ui-button--danger[disabled] {
+  background-color: #ffccc7;
+  border-color: #ffccc7;
+  color: #ffffffb3 !important;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
 .ui-button--secondary:hover {
   background-color: #e5e7eb;
 }
